@@ -3,9 +3,18 @@ from flask import Flask, request
 app = Flask(__name__)
 
 hackathons = {
-    "Bitcamp": {
-        "start_date": "never"
-    }
+    "GHW: API Week": {
+        "start_date": "2023-04-03",
+        "end_date": "2023-04-10",
+        "type": "Digital Only",
+        "location": "Everywhere, Online"
+  },
+  "Bitcamp": {
+        "start_date": "2023-04-03",
+        "end_date": "2023-04-10",
+        "type": "Digital Only",
+        "location": "College Park, Maryland"
+  }
 }
 
 @app.route("/")
